@@ -5,30 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Jonah King - Software Developer</title>
     </head>
-    <body>
-        <header class="bg-slate-900">
+    <body class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-700 text-slate-50">
+
+        <!-- header colour -->
+        <header class="bg-slate-900 border-b-2 border-gray-400/80">
+
+            <!-- navbar -->
             <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+
+                <!-- JK logo -->
                 <div class="flex lg:flex-1">
-                <a href="index.html" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Jonah King - Software Developer</span>
-                    <img src="https://i.ibb.co/4wcjSHK7/jk-logo.png" alt="jk-logo" class="h-8 w-auto" />
-                </a>
+                    <a href="index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Jonah King - Software Developer</span>
+                        <img src="https://i.ibb.co/4wcjSHK7/jk-logo.png" alt="jk-logo" class="h-8 w-auto" />
+                    </a>
                 </div>
+
+                <!-- burger menu icon for mobile -->
                 <div class="flex lg:hidden">
-                <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-                    <span class="sr-only">Open main menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+                    <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-red-400">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>              
                 </div>
+
                 <el-popover-group class="hidden lg:flex lg:gap-x-24">
                 <div class="relative">
                     <button popovertarget="desktop-menu-projects" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
                     Projects
-                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none text-gray-500">
+                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none text-red-400">
                         <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                     </svg>
                     </button>
@@ -133,7 +145,7 @@
                         <span class="sr-only">Jonah King - Software Developer</span>
                         <img src="https://i.ibb.co/4wcjSHK7/jk-logo.png" alt="jk-logo" class="h-8 w-auto">
                         </a>
-                        <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-400">
+                        <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-red-400">
                         <span class="sr-only">Close menu</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
                             <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
@@ -146,8 +158,8 @@
                             <div class="-mx-3">
                             <button type="button" command="--toggle" commandfor="projects" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
                                 Projects
-                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
-                                <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180 text-red-400">
+                                    <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                                 </svg>
                             </button>
 
@@ -174,6 +186,179 @@
                 </dialog>
             </el-dialog>
         </header>
+        <main>
+
+            <!-- HERO / NAME SECTION -->
+            <section id="hero" class="px-6 pt-16 pb-24 md:pt-24 md:pb-32">
+                <div class="pointer-events-none absolute inset-x-0 top-0 -z-10">
+                    <img
+                    src="images/hot-pink-light.png" alt="" class="w-full h-auto animate-hero-light"/>
+                </div>
+                <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+
+                <!-- little tag at the top -->
+                <p class="text-xs md:text-sm tracking-[0.35em] uppercase text-red-400 mb-6">
+                    Welcome
+                </p>
+
+                <!-- big name -->
+                <h1 class="text-6xl sm:text-7xl md:text-9xl font-[Saira] font-semibold tracking-tight">
+                    JONAH KING
+                </h1>
+
+                <!-- subtitle line -->
+                <p class="mt-6 text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-slate-300">
+                    Software Developer · Front-End · UI Engineer
+                </p>
+
+                <!-- optional short intro -->
+                <p class="mt-8 max-w-2xl text-sm md:text-base text-slate-300">
+                    I build clean, usable interfaces and full-stack projects with
+                    HTML, CSS/Tailwind, JavaScript and Python. Currently looking for
+                    software developer roles in the UK.
+                </p>
+                </div>
+            </section>
+
+            <!-- Skills section -->
+            <section id="skills" class="px-6 pb-24">
+                <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                    My Skills
+                </h2>
+
+                <div class="grid gap-8 md:grid-cols-3">
+                    <!-- Card 1 -->
+                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-3">
+                        <span class="inline-block border-b-4 border-pink-400 pb-1">
+                        Software Development
+                        </span>
+                    </h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        End-to-end builds using Python, JavaScript, HTML5 and Tailwind.
+                        Comfortable with Git, testing, and shipping small features
+                        quickly.
+                    </p>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-3">
+                        <span class="inline-block border-b-4 border-indigo-400 pb-1">
+                        Frontend&nbsp;Dev
+                        </span>
+                    </h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Building responsive UIs with semantic HTML and Tailwind.
+                        Experience with interactive pages using vanilla JavaScript.
+                    </p>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-3">
+                        <span class="inline-block border-b-4 border-cyan-400 pb-1">
+                        Data &amp; Causal AI
+                        </span>
+                    </h3>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        MSc research in causal discovery and statistical analysis.
+                        Strong with Python, data pipelines, and explaining complex
+                        ideas clearly.
+                    </p>
+                    </article>
+                </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="px-6 pb-24">
+                <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold">Selected Projects</h2>
+                    <p class="text-sm text-slate-400">
+                    Built with HTML, Tailwind, JavaScript, and Python.
+                    </p>
+                </div>
+
+                <!-- grid: 1 column on mobile, 3 on md+, main card spans 2 cols -->
+                <div class="grid gap-8 md:grid-cols-3 auto-rows-fr">
+
+                    <!-- Big main project card -->
+                    <a href="https://jonahkingcs.github.io/text-based-game/"
+                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
+                    <!-- placeholder image -->
+                    <div class="h-52 bg-gradient-to-tr from-pink-500 via-rose-500 to-orange-400 opacity-90 group-hover:opacity-100 transition"></div>
+                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                        <div>
+                        <h3 class="text-lg font-semibold">Sheffield Explorer Game</h3>
+                        <p class="mt-1 text-sm text-slate-300">
+                            Text-based adventure built with HTML, Tailwind, and
+                            JavaScript using OOP design.
+                        </p>
+                        </div>
+                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                        JavaScript · Tailwind · OOP
+                        </p>
+                    </div>
+                    </a>
+
+                    <!-- Other project cards -->
+                    <a href="https://jonahkingcs.github.io/hobby-site/"
+                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
+                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                        <div>
+                        <h3 class="text-lg font-semibold">Hobby Site</h3>
+                        <p class="mt-1 text-sm text-slate-300">
+                            Multi-page site showcasing photography, korfball and
+                            game dev journey.
+                        </p>
+                        </div>
+                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                        HTML · CSS · Tailwind
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="https://jonahkingcs.github.io/quiz-site/"
+                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
+                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                        <div>
+                        <h3 class="text-lg font-semibold">Quiz Site</h3>
+                        <p class="mt-1 text-sm text-slate-300">
+                            Timed quiz against the clock with dynamic question flow.
+                        </p>
+                        </div>
+                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                        JavaScript · Tailwind
+                        </p>
+                    </div>
+                    </a>
+
+                    <a href="https://jonahkingcs.github.io/caesar-cipher/"
+                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
+                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                        <div>
+                        <h3 class="text-lg font-semibold">Caesar Cipher</h3>
+                        <p class="mt-1 text-sm text-slate-300">
+                            Encode and decode Caesar ciphers, built with TDD.
+                        </p>
+                        </div>
+                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                        JavaScript · Tailwind · TDD
+                        </p>
+                    </div>
+                    </a>
+
+                </div>
+                </div>
+            </section>
+
+        </main>
     </body>
     <script src="index.js"></script>
 </html>
