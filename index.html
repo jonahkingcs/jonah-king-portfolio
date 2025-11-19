@@ -7,6 +7,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Jonah King - Software Developer</title>
     </head>
@@ -36,6 +37,7 @@
                     </button>              
                 </div>
 
+                <!-- navbar buttons -->
                 <el-popover-group class="hidden lg:flex lg:gap-x-24">
                 <div class="relative">
                     <button popovertarget="desktop-menu-projects" class="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
@@ -58,7 +60,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-auto">
-                                    <a href="https://jonahkingcs.github.io/hobby-site/" class="block font-semibold text-white">
+                                    <a href="#hobby" class="block font-semibold text-white">
                                     Hobby Site
                                     <span class="absolute inset-0"></span>
                                     </a>
@@ -74,7 +76,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-auto">
-                                    <a href="https://jonahkingcs.github.io/quiz-site/" class="block font-semibold text-white">
+                                    <a href="#quiz" class="block font-semibold text-white">
                                     Quiz Site
                                     <span class="absolute inset-0"></span>
                                     </a>
@@ -90,7 +92,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-auto">
-                                    <a href="https://jonahkingcs.github.io/text-based-game/" class="block font-semibold text-white">
+                                    <a href="#game" class="block font-semibold text-white">
                                     Sheffield Explorer Game
                                     <span class="absolute inset-0"></span>
                                     </a>
@@ -106,7 +108,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-auto">
-                                    <a href="https://jonahkingcs.github.io/caesar-cipher/" class="block font-semibold text-white">
+                                    <a href="#caesar" class="block font-semibold text-white">
                                     Caesar Cipher
                                     <span class="absolute inset-0"></span>
                                     </a>
@@ -127,7 +129,7 @@
                 </div>
 
                 <!-- Skills, Education and Contact Me nav bar links -->
-                <a href="#" class="text-sm/6 font-semibold text-white">Skills</a>
+                <a href="#skills" class="text-sm/6 font-semibold text-white">Skills</a>
                 <a href="#" class="text-sm/6 font-semibold text-white">Education</a>
                 <a href="#" class="text-sm/6 font-semibold text-white">Contact Me</a>
 
@@ -135,6 +137,7 @@
 
                 <!-- empty div to keep everything aligned -->
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+                
             </nav>
             <el-dialog>
                 <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
@@ -165,17 +168,15 @@
 
                             <!-- projects expanded menu -->
                             <el-disclosure id="projects" hidden class="mt-2 block space-y-2">
-                                <a href="https://jonahkingcs.github.io/hobby-site/" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Hobby Site</a>
-                                <a href="https://jonahkingcs.github.io/quiz-site/" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Quiz Site</a>
-                                <a href="https://jonahkingcs.github.io/text-based-game/" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Text Based Game</a>
-                                <a href="https://jonahkingcs.github.io/caesar-cipher/" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Caesar Cipher</a>
-                                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Automations</a>
-                                <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Get in contact</a>
+                                <a href="#hobby" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Hobby Site</a>
+                                <a href="#quiz" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Quiz Site</a>
+                                <a href="#game" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Text Based Game</a>
+                                <a href="#caesar" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Caesar Cipher</a>
                             </el-disclosure>
 
                             <!-- rest of burger menu -->
                             </div>
-                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Skills</a>
+                            <a href="#skills" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Skills</a>
                             <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Education</a>
                             <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact Me</a>
                         </div>
@@ -189,30 +190,30 @@
         <main>
 
             <!-- HERO / NAME SECTION -->
-            <section id="hero" class="px-6 pt-16 pb-24 md:pt-24 md:pb-32">
+            <section id="hero" class="px-6 pt-32 pb-48 md:pt-64 md:pb-96">
                 <div class="pointer-events-none absolute inset-x-0 top-0 -z-10">
                     <img
-                    src="images/hot-pink-light.png" alt="" class="w-full h-auto animate-hero-light"/>
+                    src="images/hot-pink.png" alt="" class="w-full h-auto hero-light"/>
                 </div>
                 <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
 
                 <!-- little tag at the top -->
-                <p class="text-xs md:text-sm tracking-[0.35em] uppercase text-red-400 mb-6">
+                <p class="text-sm md:text-lg tracking-[0.35em] font-bold uppercase text-red-400 mb-6">
                     Welcome
                 </p>
 
                 <!-- big name -->
-                <h1 class="text-6xl sm:text-7xl md:text-9xl font-[Saira] font-semibold tracking-tight">
+                <h1 class="text-6xl sm:text-7xl md:text-9xl font-[Saira] font-semibold tracking-widest">
                     JONAH KING
                 </h1>
 
                 <!-- subtitle line -->
                 <p class="mt-6 text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase text-slate-300">
-                    Software Developer · Front-End · UI Engineer
+                    Software Developer · Front-End · UI Designer
                 </p>
 
                 <!-- optional short intro -->
-                <p class="mt-8 max-w-2xl text-sm md:text-base text-slate-300">
+                <p class="mt-8 max-w-2xl text-lg md:text-base text-slate-300">
                     I build clean, usable interfaces and full-stack projects with
                     HTML, CSS/Tailwind, JavaScript and Python. Currently looking for
                     software developer roles in the UK.
@@ -221,16 +222,16 @@
             </section>
 
             <!-- Skills section -->
-            <section id="skills" class="px-6 pb-24">
+            <section id="skills" class="px-6 pb-48">
                 <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 ">
                     My Skills
                 </h2>
 
                 <div class="grid gap-8 md:grid-cols-3">
                     <!-- Card 1 -->
                     <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-xl font-semibold mb-3">
+                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
                         <span class="inline-block border-b-4 border-pink-400 pb-1">
                         Software Development
                         </span>
@@ -244,9 +245,9 @@
 
                     <!-- Card 2 -->
                     <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-xl font-semibold mb-3">
+                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
                         <span class="inline-block border-b-4 border-indigo-400 pb-1">
-                        Frontend&nbsp;Dev
+                        Frontend Dev
                         </span>
                     </h3>
                     <p class="text-sm text-slate-300 leading-relaxed">
@@ -257,9 +258,9 @@
 
                     <!-- Card 3 -->
                     <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-xl font-semibold mb-3">
+                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
                         <span class="inline-block border-b-4 border-cyan-400 pb-1">
-                        Data &amp; Causal AI
+                        Data & Causal AI
                         </span>
                     </h3>
                     <p class="text-sm text-slate-300 leading-relaxed">
@@ -272,24 +273,29 @@
                 </div>
             </section>
 
-            <!-- PROJECTS SECTION -->
+            <!-- projects section -->
             <section id="projects" class="px-6 pb-24">
                 <div class="max-w-6xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-4 gap-4">
                     <h2 class="text-3xl md:text-4xl font-bold">Selected Projects</h2>
-                    <p class="text-sm text-slate-400">
-                    Built with HTML, Tailwind, JavaScript, and Python.
+                </div>
+                <div class="flex-1 flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
+                    <p class="max-w-2xl text-lg text-slate-300">
+                        Built responsive web projects with HTML, CSS, and Tailwind, designing UIs that scale dynamically from large desktop layouts to mobile devices.<br><br>I’ve implemented interactive user experiences with JavaScript, using object-oriented principles and test-driven workflows.<br><br>My focus is on clear, maintainable code and intuitive interfaces that feel engaging to use.
                     </p>
                 </div>
 
-                <!-- grid: 1 column on mobile, 3 on md+, main card spans 2 cols -->
+                <!-- grid: 1 column on mobile, 3 on md, main card spans 2 cols -->
                 <div class="grid gap-8 md:grid-cols-3 auto-rows-fr">
 
-                    <!-- Big main project card -->
-                    <a href="https://jonahkingcs.github.io/text-based-game/"
+                    <!-- big main project card -->
+                    <a id="game" href="https://jonahkingcs.github.io/text-based-game/"
                     class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
+
                     <!-- placeholder image -->
-                    <div class="h-52 bg-gradient-to-tr from-pink-500 via-rose-500 to-orange-400 opacity-90 group-hover:opacity-100 transition"></div>
+                    <div class="h-52">
+                        <img src="images/text-based-game.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[105%]" />
+                    </div>
                     <div class="flex-1 p-6 flex flex-col justify-between gap-3">
                         <div>
                         <h3 class="text-lg font-semibold">Sheffield Explorer Game</h3>
@@ -299,13 +305,13 @@
                         </p>
                         </div>
                         <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · Tailwind · OOP
+                        JavaScript · HTML · Tailwind · OOP
                         </p>
                     </div>
                     </a>
 
-                    <!-- Other project cards -->
-                    <a href="https://jonahkingcs.github.io/hobby-site/"
+                    <!-- hobby project card -->
+                    <a id="hobby" href="https://jonahkingcs.github.io/hobby-site/"
                     class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
                     <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
                     <div class="flex-1 p-6 flex flex-col justify-between gap-3">
@@ -322,7 +328,8 @@
                     </div>
                     </a>
 
-                    <a href="https://jonahkingcs.github.io/quiz-site/"
+                    <!-- quiz project card -->
+                    <a id="quiz" href="https://jonahkingcs.github.io/quiz-site/"
                     class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
                     <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
                     <div class="flex-1 p-6 flex flex-col justify-between gap-3">
@@ -333,12 +340,13 @@
                         </p>
                         </div>
                         <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · Tailwind
+                        JavaScript · HTML · Tailwind
                         </p>
                     </div>
                     </a>
 
-                    <a href="https://jonahkingcs.github.io/caesar-cipher/"
+                    <!-- caesar cipher project card -->
+                    <a id="caesar" href="https://jonahkingcs.github.io/caesar-cipher/"
                     class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
                     <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition"></div>
                     <div class="flex-1 p-6 flex flex-col justify-between gap-3">
@@ -349,7 +357,7 @@
                         </p>
                         </div>
                         <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · Tailwind · TDD
+                        JavaScript · HTML · Tailwind · TDD
                         </p>
                     </div>
                     </a>
@@ -357,7 +365,6 @@
                 </div>
                 </div>
             </section>
-
         </main>
     </body>
     <script src="index.js"></script>

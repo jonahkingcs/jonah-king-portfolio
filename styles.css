@@ -1,0 +1,15 @@
+/* keyframes for hot pink light fade in and out
+@keyframes hero-light-pulse {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1; /* how bright the shine gets 
+  }
+} */
+
+/* class using the image */
+.hero-light {
+  opacity: 0.8;                     /* fully visible at top */
+  transition: opacity 0.5s ease-out;
+}
