@@ -2,24 +2,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const heroLight = document.querySelector(".hero-light");
   if (!heroLight) return;
 
-  // How far (in px) the user must scroll for the light to fully fade out
-  const maxFadeDistance = 400; // tweak this number to taste
+  // Pixels user must scroll for light to fade out fully
+  const maxFadeDistance = 600; // tweak this number to taste
 
   function updateLightOpacity() {
     const scrollY = window.scrollY;
 
-    // ratio goes from 0 (top of page) to 1 (scrolled maxFadeDistance or more)
+    // ratio from 0 at top of page to 1 at maxFadeDistance or bottom of the page
     const ratio = Math.min(scrollY / maxFadeDistance, 1);
 
-    // opacity: 1 at top, 0 when ratio = 1
+    // opacity = 1 at top, 0 when ratio = 1
     const opacity = 1 - ratio;
 
     heroLight.style.opacity = opacity.toString();
   }
 
-  // Set initial opacity on load
+  // set initial opacity on load
   updateLightOpacity();
 
-  // Update on scroll
+  // update when scrolling
   window.addEventListener("scroll", updateLightOpacity);
 });
