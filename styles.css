@@ -3,3 +3,8 @@
   opacity: 0.8;                         /* opacity at top */
   transition: opacity 0.5s ease-out;    /* length of time of opacity animation */
 }
+
+/* when taken to an area in the same page, scrolling is smooth */
+html {
+  scroll-behavior: smooth;
+}

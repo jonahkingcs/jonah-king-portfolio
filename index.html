@@ -13,7 +13,7 @@
     </head>
     <body class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-700 text-slate-50">
 
-        <!-- header colour -->
+        <!-- header section for navbar -->
         <header class="bg-slate-900/70 border-b-2 border-gray-400/85">
 
             <!-- navbar -->
@@ -120,7 +120,7 @@
 
                         <!-- get in contact pop up bar -->
                         <div class="grid grid-cols-1 divide-x divide-white/10 bg-gray-700/50">
-                            <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-800/70">
+                            <a href="#contact" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-800/70">
                             Get in contact
                             </a>
                         </div>
@@ -130,8 +130,8 @@
 
                 <!-- Skills, Education and Contact Me nav bar links -->
                 <a href="#skills" class="text-sm/6 font-semibold text-white">Skills</a>
-                <a href="#" class="text-sm/6 font-semibold text-white">Education</a>
-                <a href="#" class="text-sm/6 font-semibold text-white">Contact Me</a>
+                <a href="#education" class="text-sm/6 font-semibold text-white">Education</a>
+                <a href="#contact" class="text-sm/6 font-semibold text-white">Contact Me</a>
 
                 </el-popover-group>
 
@@ -177,8 +177,8 @@
                             <!-- rest of burger menu -->
                             </div>
                             <a href="#skills" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Skills</a>
-                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Education</a>
-                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact Me</a>
+                            <a href="#education" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Education</a>
+                            <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact Me</a>
                         </div>
                         </div>
                     </div>
@@ -189,15 +189,17 @@
         </header>
         <main>
 
-            <!-- HERO / NAME SECTION -->
+            <!-- title page section -->
             <section id="hero" class="px-6 pt-32 pb-48 md:pt-64 md:pb-96">
+
+                <!-- hot pink light background -->
                 <div class="pointer-events-none absolute inset-x-0 top-0 -z-10">
                     <img
                     src="images/hot-pink.png" alt="" class="w-full h-auto hero-light"/>
                 </div>
                 <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
 
-                <!-- little tag at the top -->
+                <!-- welcome tag at the top -->
                 <p class="text-sm md:text-lg tracking-[0.35em] font-bold uppercase text-red-400 mb-6">
                     Welcome
                 </p>
@@ -212,7 +214,7 @@
                     Software Developer · Front-End · UI Designer
                 </p>
 
-                <!-- optional short intro -->
+                <!-- short intro -->
                 <p class="mt-8 max-w-2xl text-lg md:text-base text-slate-300">
                     I build clean, usable interfaces and full-stack projects with
                     HTML, CSS/Tailwind, JavaScript and Python. Currently looking for
@@ -221,156 +223,204 @@
                 </div>
             </section>
 
-            <!-- Skills section -->
-            <section id="skills" class="px-6 pb-48">
+            <!-- skills section -->
+            <section id="skills" class="px-6 pb-24">
                 <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 ">
-                    My Skills
-                </h2>
+                    <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 ">
+                        My Skills
+                    </h2>
 
-                <div class="grid gap-8 md:grid-cols-3">
-                    <!-- Card 1 -->
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
-                        <span class="inline-block border-b-4 border-pink-400 pb-1">
-                        Software Development
-                        </span>
-                    </h3>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        End-to-end builds using Python, JavaScript, HTML5 and Tailwind.
-                        Comfortable with Git, testing, and shipping small features
-                        quickly.
-                    </p>
-                    </article>
+                    <div class="grid gap-8 md:grid-cols-3">
+                        
+                        <!-- card 1 -->
+                        <article class="rounded-2xl border border-slate-700 bg-slate-800/30 p-6 backdrop-blur-sm">
+                            <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
+                                <span class="inline-block border-b-4 border-pink-400 pb-1">
+                                Software Development
+                                </span>
+                            </h3>
+                            <p class="text-md text-slate-300 leading-relaxed p-4">
+                                End-to-end builds using Python, JavaScript, HTML5 and Tailwind.
+                                Comfortable with Git, testing, and shipping small features
+                                quickly.
+                            </p>
+                        </article>
 
-                    <!-- Card 2 -->
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
-                        <span class="inline-block border-b-4 border-indigo-400 pb-1">
-                        Frontend Dev
-                        </span>
-                    </h3>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        Building responsive UIs with semantic HTML and Tailwind.
-                        Experience with interactive pages using vanilla JavaScript.
-                    </p>
-                    </article>
+                        <!-- card 2 -->
+                        <article class="rounded-2xl border border-slate-700 bg-slate-800/30 p-6 backdrop-blur-sm">
+                            <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
+                                <span class="inline-block border-b-4 border-indigo-400 pb-1">
+                                Frontend Dev
+                                </span>
+                            </h3>
+                            <p class="text-md text-slate-300 leading-relaxed p-4">
+                                Building responsive, pixel-perfect UIs with semantic HTML and Tailwind.
+                                Experience with interactive pages using vanilla JavaScript.
+                            </p>
+                        </article>
 
-                    <!-- Card 3 -->
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
-                    <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
-                        <span class="inline-block border-b-4 border-cyan-400 pb-1">
-                        Data & Causal AI
-                        </span>
-                    </h3>
-                    <p class="text-sm text-slate-300 leading-relaxed">
-                        MSc research in causal discovery and statistical analysis.
-                        Strong with Python, data pipelines, and explaining complex
-                        ideas clearly.
-                    </p>
-                    </article>
-                </div>
+                        <!-- card 3 -->
+                        <article class="rounded-2xl border border-slate-700 bg-slate-800/30 p-6 backdrop-blur-sm">
+                            <h3 class="text-2xl font-semibold mb-3 font-[Saira]">
+                                <span class="inline-block border-b-4 border-red-400 pb-1">
+                                Backend Dev
+                                </span>
+                            </h3>
+                            <p class="text-md text-slate-300 leading-relaxed p-4">
+                                To be updated
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <!-- projects section -->
-            <section id="projects" class="px-6 pb-24">
+            <section id="projects" class="px-6 pt-24 pb-48">
                 <div class="max-w-6xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-4 gap-4">
-                    <h2 class="text-3xl md:text-4xl font-bold">Selected Projects</h2>
-                </div>
-                <div class="flex-1 flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
-                    <p class="max-w-2xl text-lg text-slate-300">
-                        Built responsive web projects with HTML, CSS, and Tailwind, designing UIs that scale dynamically from large desktop layouts to mobile devices.<br><br>I’ve implemented interactive user experiences with JavaScript, using object-oriented principles and test-driven workflows.<br><br>My focus is on clear, maintainable code and intuitive interfaces that feel engaging to use.
-                    </p>
-                </div>
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-4 gap-4">
+                        <h2 class="text-3xl md:text-4xl font-bold">Selected Projects</h2>
+                    </div>
 
-                <!-- grid: 1 column on mobile, 3 on md, main card spans 2 cols -->
-                <div class="grid gap-8 md:grid-cols-3 auto-rows-fr">
+                    <!-- projects description -->
+                    <div class="flex-1 flex flex-col md:flex-row md:items-end md:justify-between mb-12 gap-4">
+                        <p class="max-w-2xl text-lg text-slate-300">
+                            Built responsive web projects with HTML, CSS, and Tailwind, designing UIs that scale dynamically from large desktop layouts to mobile devices.<br><br>I’ve implemented interactive user experiences with JavaScript, using object-oriented principles and test-driven workflows.<br><br>My focus is on clear, maintainable code and intuitive interfaces that feel engaging to use.
+                        </p>
+                    </div>
 
-                    <!-- big main project card -->
-                    <a id="game" href="https://jonahkingcs.github.io/text-based-game/"
-                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
+                    <!-- grid: 1 column on mobile, 3 on md, main card spans 2 cols -->
+                    <div class="grid gap-8 md:grid-cols-3 auto-rows-fr">
 
-                    <!-- placeholder image -->
-                    <div class="h-52">
-                        <img src="images/text-based-game.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[105%]" />
-                    </div>
-                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
-                        <div>
-                        <h3 class="text-lg font-semibold">Sheffield Explorer Game</h3>
-                        <p class="mt-1 text-sm text-slate-300">
-                            Text-based adventure built with HTML, Tailwind, and
-                            JavaScript using OOP design.
-                        </p>
-                        </div>
-                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · HTML · Tailwind · OOP
-                        </p>
-                    </div>
-                    </a>
+                        <!-- big main project card -->
+                        <a id="game" href="https://jonahkingcs.github.io/text-based-game/"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
 
-                    <!-- hobby project card -->
-                    <a id="hobby" href="https://jonahkingcs.github.io/hobby-site/"
-                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
-                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
-                        <img src="images/hobby-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[105%]" />
-                    </div>
-                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
-                        <div>
-                        <h3 class="text-lg font-semibold">Hobby Site</h3>
-                        <p class="mt-1 text-sm text-slate-300">
-                            Multi-page site showcasing photography, korfball and
-                            game dev journey.
-                        </p>
-                        </div>
-                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        HTML · CSS · Tailwind
-                        </p>
-                    </div>
-                    </a>
+                            <!-- text based game image -->
+                            <div class="h-52">
+                                <img src="images/text-based-game.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[110%]" />
+                            </div>
+                            <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                                <div>
+                                <h3 class="text-lg font-semibold">Sheffield Explorer Game</h3>
+                                <p class="mt-1 text-sm text-slate-300">
+                                    Text-based adventure built with HTML, Tailwind, and
+                                    JavaScript using OOP design.
+                                </p>
+                                </div>
+                                <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                                JavaScript · HTML · Tailwind · OOP
+                                </p>
+                            </div>
+                        </a>
 
-                    <!-- quiz project card -->
-                    <a id="quiz" href="https://jonahkingcs.github.io/quiz-site/"
-                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
-                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
-                        <img src="images/quiz-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[105%]" />
-                    </div>
-                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
-                        <div>
-                        <h3 class="text-lg font-semibold">Quiz Site</h3>
-                        <p class="mt-1 text-sm text-slate-300">
-                            Timed quiz against the clock with dynamic question flow.
-                        </p>
-                        </div>
-                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · HTML · Tailwind
-                        </p>
-                    </div>
-                    </a>
+                        <!-- hobby project card -->
+                        <a id="hobby" href="https://jonahkingcs.github.io/hobby-site/"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
 
-                    <!-- caesar cipher project card -->
-                    <a id="caesar" href="https://jonahkingcs.github.io/caesar-cipher/"
-                    class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
-                    <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
-                        <img src="images/caesar-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[105%]" />
-                    </div>
-                    <div class="flex-1 p-6 flex flex-col justify-between gap-3">
-                        <div>
-                        <h3 class="text-lg font-semibold">Caesar Cipher</h3>
-                        <p class="mt-1 text-sm text-slate-300">
-                            Encode and decode Caesar ciphers, built with TDD.
-                        </p>
-                        </div>
-                        <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
-                        JavaScript · HTML · Tailwind · TDD
-                        </p>
-                    </div>
-                    </a>
+                            <!-- hobby site image -->
+                            <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
+                                <img src="images/hobby-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[110%]" />
+                            </div>
+                            <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                                <div>
+                                <h3 class="text-lg font-semibold">Hobby Site</h3>
+                                <p class="mt-1 text-sm text-slate-300">
+                                    Multi-page site showcasing photography, korfball and
+                                    game dev journey.
+                                </p>
+                                </div>
+                                <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                                HTML · CSS · Tailwind
+                                </p>
+                            </div>
+                        </a>
 
-                </div>
+                        <!-- quiz project card -->
+                        <a id="quiz" href="https://jonahkingcs.github.io/quiz-site/"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+
+                            <!-- quiz site image -->
+                            <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
+                                <img src="images/quiz-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[110%]" />
+                            </div>
+                            <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                                <div>
+                                <h3 class="text-lg font-semibold">Quiz Site</h3>
+                                <p class="mt-1 text-sm text-slate-300">
+                                    Timed quiz against the clock with dynamic question flow.
+                                </p>
+                                </div>
+                                <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                                JavaScript · HTML · Tailwind
+                                </p>
+                            </div>
+                        </a>
+
+                        <!-- caesar cipher project card -->
+                        <a id="caesar" href="https://jonahkingcs.github.io/caesar-cipher/"
+                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+
+                            <!-- caesar cipher site image -->
+                            <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
+                                <img src="images/caesar-site.png" alt="text based game image" class="h-full w-full object-cover transition hover:scale-[110%]" />
+                            </div>
+                            <div class="flex-1 p-6 flex flex-col justify-between gap-3">
+                                <div>
+                                <h3 class="text-lg font-semibold">Caesar Cipher</h3>
+                                <p class="mt-1 text-sm text-slate-300">
+                                    Encode and decode Caesar ciphers, built with TDD.
+                                </p>
+                                </div>
+                                <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                                JavaScript · HTML · Tailwind · TDD
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </section>
+
+            <!-- education section -->
+            <section id="education" class="px-6 pb-48">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-left mb-6">
+                        Education
+                    </h2>
+
+                    <div class="grid gap-8 md:grid-cols-12">
+                        <!-- MSc -->
+                        <article class="col-span-7 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                            <h3 class="text-xl font-semibold mb-3 font-[Saira]">
+                                <span class="inline-block border-b-4 border-red-400 pb-1">
+                                Computer Science MSc - University of Birmingham
+                                </span>
+                            </h3>
+                            <p class="text-md text-slate-100 font-semibold leading-relaxed pb-4">
+                                Distinction · Graduated 2025
+                            </p>
+                            <p class="text-md text-slate-300 leading-relaxed">
+                                Software Development Workshop (Python) · AI + Machine Learning · Data Structures · Web Design (HTML, CSS, Flask) · Agile Methodologies
+                            </p>
+                        </article>
+
+                        <!-- BSc -->
+                        <article class="col-span-5 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                            <h3 class="text-xl font-semibold mb-3 font-[Saira]">
+                                <span class="inline-block border-b-4 border-pink-400 pb-1">
+                                Biology BSc - University of Sussex
+                                </span>
+                            </h3>
+                            <p class="text-md text-slate-100 font-semibold leading-relaxed pb-4">
+                                First Class Honours · Graduated 2024
+                            </p>
+                            <p class="text-md text-slate-300 leading-relaxed">
+                                RStudio · Computational Biology · Statistical Analysis · Data Visualisation
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
     <script src="index.js"></script>
