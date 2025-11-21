@@ -131,6 +131,7 @@
                 <!-- Skills, Education and Contact Me nav bar links -->
                 <a href="#skills" class="text-sm/6 font-semibold text-white">Skills</a>
                 <a href="#education" class="text-sm/6 font-semibold text-white">Education</a>
+                <a href="https://github.com/jonahkingcs" class="text-sm/6 font-semibold text-white">GitHub</a>
                 <a href="#contact" class="text-sm/6 font-semibold text-white">Contact Me</a>
 
                 </el-popover-group>
@@ -178,6 +179,7 @@
                             </div>
                             <a href="#skills" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Skills</a>
                             <a href="#education" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Education</a>
+                            <a href="https://github.com/jonahkingcs" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">GitHub</a>
                             <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact Me</a>
                         </div>
                         </div>
@@ -389,7 +391,7 @@
 
                     <div class="grid gap-8 md:grid-cols-12">
                         <!-- MSc -->
-                        <article class="col-span-7 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                        <article class="md:col-span-7 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
                             <h3 class="text-xl font-semibold mb-3 font-[Saira]">
                                 <span class="inline-block border-b-4 border-red-400 pb-1">
                                 Computer Science MSc - University of Birmingham
@@ -404,20 +406,88 @@
                         </article>
 
                         <!-- BSc -->
-                        <article class="col-span-5 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
+                        <article class="md:col-span-5 rounded-2xl border border-slate-700 bg-slate-900/40 p-6 backdrop-blur-sm">
                             <h3 class="text-xl font-semibold mb-3 font-[Saira]">
                                 <span class="inline-block border-b-4 border-pink-400 pb-1">
-                                Biology BSc - University of Sussex
+                                Software Development Bootcamp - The Developer Bootcamp
                                 </span>
                             </h3>
                             <p class="text-md text-slate-100 font-semibold leading-relaxed pb-4">
-                                First Class Honours · Graduated 2024
+                                November 2025
                             </p>
                             <p class="text-md text-slate-300 leading-relaxed">
-                                RStudio · Computational Biology · Statistical Analysis · Data Visualisation
+                                JavaScript · HTML · CSS · Tailwind · Git · Test Driven Development · Object Oriented Programming
                             </p>
                         </article>
                     </div>
+                </div>
+            </section>
+            
+            <!-- contact section -->
+            <section id="contact" class="bg-slate-900 px-6 pt-32 pb-32">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
+                        Contact Me
+                    </h2>
+
+                    <p class="mb-8 text-slate-300 text-sm md:text-base text-center md:text-left">
+                        Want to work together or have any questions?<br><br>Feel free to reach out using the form below
+                    </p>
+
+                    <article class="rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+                        <!-- Formspree form -->
+                        <form
+                          action="https://formspree.io/f/xdkbwqpv"
+                          method="POST"
+                          class="space-y-6"
+                        >
+                            <!-- Name -->
+                            <div>
+                                <input
+                                  type="text"
+                                  id="name"
+                                  name="name"
+                                  required
+                                  class="w-full bg-gray-800 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-red-400"
+                                  placeholder="Name"
+                                />
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <input
+                                  type="email"
+                                  id="email"
+                                  name="email"
+                                  required
+                                  class="w-full bg-gray-800 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-red-400"
+                                  placeholder="Enter Email"
+                                />
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <textarea
+                                  id="message"
+                                  name="message"
+                                  required
+                                  rows="5"
+                                  class="resize-none w-full bg-gray-800 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-red-400"
+                                  placeholder="Message"
+                                ></textarea>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="flex justify-center md:justify-end">
+                                <button
+                                  type="submit"
+                                  class="inline-flex items-center justify-center bg-red-500 px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-red-400 focus-visible:ring-offset-slate-900 transition"
+                                >
+                                  Send message
+                                </button>
+                            </div>
+                        </form>
+                    </article>
                 </div>
             </section>
 
