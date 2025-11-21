@@ -14,7 +14,7 @@
     <body class="min-h-screen bg-gradient-to-b from-slate-900 via-slate-900 to-slate-700 text-slate-50">
 
         <!-- header section for navbar -->
-        <header class="bg-slate-900/70 border-b-2 border-gray-400/85">
+        <header class="bg-slate-900/80 backdrop-blur-sm shadow-lg">
 
             <!-- navbar -->
             <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
@@ -131,7 +131,7 @@
                 <!-- Skills, Education and Contact Me nav bar links -->
                 <a href="#skills" class="text-sm/6 font-semibold text-white">Skills</a>
                 <a href="#education" class="text-sm/6 font-semibold text-white">Education</a>
-                <a href="https://github.com/jonahkingcs" class="text-sm/6 font-semibold text-white">GitHub</a>
+                <a href="https://github.com/jonahkingcs" class="text-sm/6 font-semibold text-white" target="_blank">GitHub</a>
                 <a href="#contact" class="text-sm/6 font-semibold text-white">Contact Me</a>
 
                 </el-popover-group>
@@ -142,7 +142,7 @@
             </nav>
             <el-dialog>
                 <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none backdrop-blur-xs">
                     <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                     <div class="flex items-center justify-between">
                         <a href="index.html" class="-m-1.5 p-1.5">
@@ -294,8 +294,8 @@
                     <div class="grid gap-8 md:grid-cols-3 auto-rows-fr">
 
                         <!-- big main project card -->
-                        <a id="game" href="https://jonahkingcs.github.io/text-based-game/"
-                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
+                        <a id="game" href="https://jonahkingcs.github.io/text-based-game/" target="_blank"
+                        class="group relative overflow-hidden rounded-2xl bg-slate-950/50 hover:bg-slate-950/70 transition transform hover:-translate-y-1 hover:shadow-xl md:col-span-2 flex flex-col">
 
                             <!-- text based game image -->
                             <div class="h-52">
@@ -316,8 +316,8 @@
                         </a>
 
                         <!-- hobby project card -->
-                        <a id="hobby" href="https://jonahkingcs.github.io/hobby-site/"
-                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                        <a id="hobby" href="https://jonahkingcs.github.io/hobby-site/" target="_blank"
+                        class="group relative overflow-hidden rounded-2xl bg-slate-950/50 hover:bg-slate-950/70 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
 
                             <!-- hobby site image -->
                             <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
@@ -338,8 +338,8 @@
                         </a>
 
                         <!-- quiz project card -->
-                        <a id="quiz" href="https://jonahkingcs.github.io/quiz-site/"
-                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                        <a id="quiz" href="https://jonahkingcs.github.io/quiz-site/" target="_blank"
+                        class="group relative overflow-hidden rounded-2xl bg-slate-950/50 hover:bg-slate-950/70 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
 
                             <!-- quiz site image -->
                             <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
@@ -359,8 +359,8 @@
                         </a>
 
                         <!-- caesar cipher project card -->
-                        <a id="caesar" href="https://jonahkingcs.github.io/caesar-cipher/"
-                        class="group relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900/60 hover:bg-slate-900 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
+                        <a id="caesar" href="https://jonahkingcs.github.io/caesar-cipher/" target="_blank"
+                        class="group relative overflow-hidden rounded-2xl bg-slate-950/50 hover:bg-slate-950/70 transition transform hover:-translate-y-1 hover:shadow-xl flex flex-col">
 
                             <!-- caesar cipher site image -->
                             <div class="h-40 bg-slate-800/80 group-hover:bg-slate-700/80 transition">
@@ -424,7 +424,7 @@
             </section>
             
             <!-- contact section -->
-            <section id="contact" class="bg-slate-900 px-6 pt-32 pb-32">
+            <section id="contact" class="bg-slate-900 px-6 pt-16 pb-16">
                 <div class="max-w-3xl mx-auto">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
                         Contact Me
@@ -488,6 +488,26 @@
                             </div>
                         </form>
                     </article>
+                </div>
+            </section>
+
+            <!-- links section -->
+            <section class="h-20 bg-gray-800">
+                <div class="max-w-6xl mx-auto flex flex-col flex-row items-center justify-center gap-4">
+
+                    <!-- GitHub logo -->
+                    <a href="https://github.com/jonahkingcs" target="_blank" class="pt-4 transition hover:scale-[90%]">
+                        <div class="logo-wrapper inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50 transition hover:bg-slate-600 overflow-hidden">
+                            <img src="images/github.png" alt="GitHub icon" class="logo-icon h-8 w-auto"/>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn logo-->
+                    <a href="https://www.linkedin.com/in/jonah-king-06489538a/" target="_blank" class="pt-4 transition hover:scale-[90%]">
+                        <div class="logo-wrapper inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50 transition hover:bg-slate-600 overflow-hidden">
+                            <img src="images/linked-in.png" alt="LinkedIn icon" class="logo-icon h-8 w-auto"/>
+                        </div>
+                    </a>
                 </div>
             </section>
 
