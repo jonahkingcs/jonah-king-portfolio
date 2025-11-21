@@ -8,3 +8,30 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* icon drops out the bottom, re-enters from the top, and returns to center */
+@keyframes logo-drop-loop {
+  0% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(120%); /* fully out the bottom */
+  }
+  50% {
+    transform: translateY(120%);
+  }
+  51% {
+    transform: translateY(-120%); /* jump to above the box (hidden at top) */
+  }
+  60% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(0); /* back to the middle */
+  }
+}
+
+/* run the animation once when hovering over box */
+.logo-wrapper:hover .logo-icon {
+  animation: logo-drop-loop 0.2s ease-in-out forwards;
+}
